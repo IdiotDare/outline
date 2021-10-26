@@ -7,5 +7,5 @@ document.querySelector('#sidebar').onclick = function() {
 }
 
 document.querySelector('#update').onclick = function() {
-    alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basica JS.');
+    alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
