@@ -9,3 +9,30 @@ document.querySelector('#sidebar').onclick = function() {
 document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
+
+document.querySelector('#randotext').onclick = function() {
+    var num = Math.floor(Math.random()*(10-1)+1);
+    Switch(num){
+    case num == 1:
+        alert('I know right?);
+        break;
+    case num == 2:
+        alert('Confusing, huh?');
+        break;
+    case num == 3:
+        alert("I don't know what you want.");
+        break;
+    case num == 4:
+        alert("I'm not sure why you're asking me.")
+        break;
+    case num == 5:
+        alert("I don't think you should ask me.")
+        break;
+    case num == 6:
+        alert("I...")
+        break;
+        
+    default:
+        alert("Please stop.")      
+ }    
+}
