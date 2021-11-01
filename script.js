@@ -9,7 +9,7 @@ document.querySelector('#sidebar').onclick = function() {
 document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
-
+/*
 document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num){
@@ -36,6 +36,7 @@ document.querySelector('#randotext').onclick = function() {
         alert("Please stop.")      
  }    
 }
+*/
 /*
 function randotext() {
     var num = Math.floor(Math.random()*(10-1)+1);
