@@ -7,7 +7,7 @@ document.querySelector('#sidebar').onclick = function() {
 }
 
 document.querySelector('#update').onclick = function() {
-    alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
+    alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :| I\m still learning basic JS.');
 }
 
 
@@ -27,18 +27,18 @@ var wLines = [
     "I'm going to f*cking slap you.",
     "...?",
     "I am not...",
-    "Local ??? is confused!",
+    italics("Local ??? is confused!"),
     "no idea dude I’m lost",
     "Not sure bro I’m unsure"
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
 function change_text(){
     var num = Math.floor(Math.random() * (17-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
-    if(wLines[num] != document.getElementById("text").textContent && num != 14) {
+    if(wLines[num] != document.getElementById("text").textContent /*&& num != 14*/) {
         document.getElementById("text").innerHTML = wLines[num];
-    } else if(num == 14 && wLines[14] != document.getElementById("text").textContent){
-        document.getElementById("text").innerHTML = italics(wLines[num]);
-    } else if(wLines[num] == document.getElementById("text").textContent) {
+    }/* else if(num == 14 && wLines[14] != document.getElementById("text").textContent){
+        document.getElementById("text").innerHTML = italics(wLines[num]); 
+    }*/ else if(wLines[num] == document.getElementById("text").textContent) {
         rantext()
     } else {
         document.getElementById("text").innerHTML = "IdiotDare is an idiot and needs to fix their code.";
