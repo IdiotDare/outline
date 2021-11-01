@@ -46,7 +46,7 @@ function change_text(){//button onclick calls this function
 
 
 
-/*
+
 document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num+0){
@@ -73,7 +73,7 @@ document.querySelector('#randotext').onclick = function() {
         alert("Please stop.")      
  }    
 }
-*/
+
 /*
 function randotext() {
     var num = Math.floor(Math.random()*(10-1)+1);
