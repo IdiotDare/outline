@@ -27,7 +27,9 @@ var wLines = [
     "I'm going to f*cking slap you.",
     "...?",
     "I am not...",
-    italics("Local ??? is confused!")
+    italics("Local ??? is confused!"),
+    "no idea dude I’m lost",
+    "Not sure bro I’m unsure"
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
 function change_text(){
