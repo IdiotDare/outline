@@ -32,7 +32,7 @@ function textGenerato() {//should generator a random string into a var, which is
 
 
 function change_text(){//button onclick calls this function
-    
+    document.getElementById("text").innerHTML = textGenerato();
     
 }
 
