@@ -19,10 +19,19 @@ function textGenerato() {//should generator a random string into a var, which is
             saysText.push("I know right?");
             break;
         case 2:
-            saysText.push("");
+            saysText.push("Confusing, huh?");
             break;
         case 3:
-            saysText.push("");
+            saysText.push("I don't know what you want.");
+            break;
+        case 4:
+            saysText.push("I'm not sure why you're asking me.");
+            break;
+        case 5:
+            saysText.push("I don't think you should ask me.");
+            break;
+        case 6:
+            saysText.push("I...")
             break;
         default:
             saysText.push("Please stop.");
