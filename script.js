@@ -9,33 +9,34 @@ document.querySelector('#sidebar').onclick = function() {
 document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
-/*
-var saysText = "";
+
+var saysText = [];
 
 function textGenerato() {//should generator a random string into a var, which is then presented by change_text
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num+0){
         case 1:
-            saysText = "I know right?";
+            saysText.push("I know right?");
             break;
         case 2:
-            saysText="";
+            saysText.push("");
             break;
         case 3:
-            saysText="";
+            saysText.push("");
             break;
         default:
-            saysText = "Please stop.";
+            saysText.push("Please stop.");
             break;
     }
 }
 
 
 function change_text(){//button onclick calls this function
-    document.getElementById("text").innerHTML = textGenerato();
+    textGenerato()
+    document.getElementById("text").innerHTML = saysText[0];
     
 }
-*/
+
 //    document.getElementById("text").innerHTML = "You clicked the button, I am new paragraph.";
 
 
@@ -46,7 +47,7 @@ function change_text(){//button onclick calls this function
 
 
 
-
+/*
 document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num+0){
@@ -73,7 +74,7 @@ document.querySelector('#randotext').onclick = function() {
         alert("Please stop.")      
  }    
 }
-
+*/
 /*
 function randotext() {
     var num = Math.floor(Math.random()*(10-1)+1);
