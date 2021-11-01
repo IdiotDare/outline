@@ -27,15 +27,17 @@ var wLines = [
     "I'm going to f*cking slap you.",
     "...?",
     "I am not...",
-    italics("Local ??? is confused!"),
+    "Local ??? is confused!",
     "no idea dude I’m lost",
     "Not sure bro I’m unsure"
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
 function change_text(){
-    var num = Math.floor(Math.random() * (15-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
-    if(wLines[num] != document.getElementById("text").textContent) {
+    var num = Math.floor(Math.random() * (17-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
+    if(wLines[num] != document.getElementById("text").textContent && num != 14) {
         document.getElementById("text").innerHTML = wLines[num];
+    } else if(num=14 && wLines[14] != document.getElementById("text").textContent){
+        document.getElementById("text").innerHTML = italics(wLines[num]);
     } else if(wLines[num] == document.getElementById("text").textContent) {
         rantext()
     } else {
