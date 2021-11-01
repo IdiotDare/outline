@@ -26,10 +26,15 @@ var wLines = [
     "Please stop."
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
-function ranText(){
+function change_text(){
     var num = Math.floor(Math.random() * (10-1)) //chooses a random number between 0 and 9, which will then be used to index blah blah the array.
-    if( wLines[num] != document.getElementById("text").textContent) {
-        
+    if(wLines[num] != document.getElementById("text").textContent) {
+        document.getElementById("text").innerHTML = wLines[num];
+    } else if(wLines[num] == document.getElementById("text").textContent) {
+        rantext()
+    } else {
+        document.getElementById("text").innerHTML = "IdiotDare is an idiot and needs to fix their code.";
+    }
 }
 // onclick="change_text" button id is #randotext paragraph id is "text" no hastag needed to mention ids
 //document.getElementById("text").innerHTML = "text";
