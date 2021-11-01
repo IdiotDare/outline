@@ -18,26 +18,26 @@ function change_text(){
     return num
     switch(num){
     case num == 1:
-        document.getElementById("text").innerHTML = 'I know right?';
+        document.getElementById("#text").innerHTML = 'I know right?';
         break;
     case num == 2:
-        document.getElementById("text").innerHTML = 'Confusing, huh?';
+        document.getElementById("#text").innerHTML = 'Confusing, huh?';
         break;
     case num == 3:
-        document.getElementById("text").innerHTML = "I don't know what you want.";
+        document.getElementById("#text").innerHTML = "I don't know what you want.";
         break;
     case num == 4:
-        document.getElementById("text").innerHTML = "I'm not sure why you're asking me.";
+        document.getElementById("#text").innerHTML = "I'm not sure why you're asking me.";
         break;
     case num == 5:
-        document.getElementById("text").innerHTML = "I don't think you should ask me.";
+        document.getElementById("#text").innerHTML = "I don't think you should ask me.";
         break;
     case num == 6:
-        document.getElementById("text").innerHTML = "I...";
+        document.getElementById("#text").innerHTML = "I...";
         break;
         
     default:
-        alert("Please stop.")  document.getElementById("text").innerHTML = "Please stop.";
+        alert("Please stop.")  document.getElementById("#text").innerHTML = "Please stop.";
    }
 }
 
