@@ -11,7 +11,7 @@ document.querySelector('#update').onclick = function() {
 }
 
 
-function testButton() {//should generator a random string into a var, which is then presented by change_text
+function testButton() {//popup random text testing
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num+0){
         case 1:
