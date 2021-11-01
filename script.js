@@ -9,7 +9,7 @@ document.querySelector('#sidebar').onclick = function() {
 document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
-
+/*
 var saysText = "";
 
 function textGenerato() {//should generator a random string into a var, which is then presented by change_text
@@ -35,7 +35,7 @@ function change_text(){//button onclick calls this function
     document.getElementById("text").innerHTML = textGenerato();
     
 }
-
+*/
 //    document.getElementById("text").innerHTML = "You clicked the button, I am new paragraph.";
 
 
@@ -49,23 +49,23 @@ function change_text(){//button onclick calls this function
 /*
 document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
-    switch(num){
-    case num == 1:
+    switch(num+0){
+    case 1:
         alert('I know right?);
         break;
-    case num == 2:
+    case 2:
         alert('Confusing, huh?');
         break;
-    case num == 3:
+    case 3:
         alert("I don't know what you want.");
         break;
-    case num == 4:
+    case 4:
         alert("I'm not sure why you're asking me.")
         break;
-    case num == 5:
+    case 5:
         alert("I don't think you should ask me.")
         break;
-    case num == 6:
+    case 6:
         alert("I...")
         break;
         
