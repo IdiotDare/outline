@@ -10,35 +10,30 @@ document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
 
+var saysText = "";
 
-
-function change_text(){
-    
+function textGenerato() {//should generator a random string into a var, which is then presented by change_text
     var num = Math.floor(Math.random()*(10-1)+1);
-    return num
-    switch(num){
-    case num == 1:
-        document.getElementById("text").innerHTML = 'I know right?';
-        break;
-    case num == 2:
-        document.getElementById("text").innerHTML = 'Confusing, huh?';
-        break;
-    case num == 3:
-        document.getElementById("text").innerHTML = "I don't know what you want.";
-        break;
-    case num == 4:
-        document.getElementById("text").innerHTML = "I'm not sure why you're asking me.";
-        break;
-    case num == 5:
-        document.getElementById("text").innerHTML = "I don't think you should ask me.";
-        break;
-    case num == 6:
-        document.getElementById("text").innerHTML = "I...";
-        break;
-        
-    default:
-        alert("Please stop.")  document.getElementById("text").innerHTML = "Please stop.";
-   }
+    switch(num+0){
+        case 1:
+            saysText = "I know right?";
+            break;
+        case 2:
+            saysText="";
+            break;
+        case 3:
+            saysText="";
+            break;
+        default:
+            saysText = "Please stop.";
+            break;
+    }
+}
+
+
+function change_text(){//button onclick calls this function
+    
+    
 }
 
 //    document.getElementById("text").innerHTML = "You clicked the button, I am new paragraph.";
