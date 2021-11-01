@@ -19,7 +19,7 @@ var wLines = [
     "I'm not sure why you're asking me.",
     "I don't think you should ask me.",
     "I...",
-    "I...am not exactly unsure.",
+    "I...am not exactly sure.",
     "I don't get it...",
     "Sorry. I don't understand.",
     "I don't know. Do I look like I even care? ...Sorry.",
@@ -29,16 +29,16 @@ var wLines = [
     "I am not...",
     "*Local ??? is confused!*",
     "no idea dude I’m lost",
-    "Not sure bro I’m unsure"
+    "Not sure bro I’m unsure",
+    "I...forget how to think. Later?",
+    "Umm..."
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
 function change_text(){
     var num = Math.floor(Math.random() * (17-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
-    if(wLines[num] != document.getElementById("text").textContent /*&& num != 14*/) {
+    if(wLines[num] != document.getElementById("text").textContent) {
         document.getElementById("text").innerHTML = wLines[num];
-    }/* else if(num == 14 && wLines[14] != document.getElementById("text").textContent){
-        document.getElementById("text").innerHTML = italics(wLines[num]); 
-    }*/ else if(wLines[num] == document.getElementById("text").textContent) {
+    } else if(wLines[num] == document.getElementById("text").textContent) {
         rantext()
     } else {
         document.getElementById("text").innerHTML = "IdiotDare is an idiot and needs to fix their code.";
