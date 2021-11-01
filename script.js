@@ -11,6 +11,45 @@ document.querySelector('#update').onclick = function() {
 }
 
 
+//line break
+var wLines = [
+    "I know right?",
+    "Confusing, huh?",
+    "I don't know what you want.",
+    "I'm not sure why you're asking me.",
+    "I don't think you should ask me.",
+    "I...",
+    "I...am not exactly unsure.",
+    "I don't get it...",
+    "Sorry. I don't understand.",
+    "I don't know. Do I look like I even care? ...Sorry.",
+    "Please stop."
+] //an array of possible options which can be picked out later with smth ike wLines[num] 
+
+function ranText(){
+    var num = Math.floor(Math.random() * (10-1)) //chooses a random number between 0 and 9, which will then be used to index blah blah the array.
+    if( wLines[num] != document.getElementById("text").textContent) {
+        
+}
+// onclick="change_text" button id is #randotext paragraph id is "text" no hastag needed to mention ids
+//document.getElementById("text").innerHTML = "text";
+//document.getElementById("myBtn").textContent refers to text content
+/* Text options:
+
+"I know right?"
+"Confusing, huh?"
+"I don't know what you want."
+"I'm not sure why you're asking me."
+"I don't think you should ask me."
+"I..."
+"I...am not exactly unsure."
+"I don't get it..."
+"Sorry. I don't understand."
+"I don't know. Do I look like I even care? ...Sorry."
+"Please stop.";
+            */
+
+
 function testButton() {//popup random text testing
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num+0){
@@ -49,25 +88,3 @@ function testButton() {//popup random text testing
             break;
     }
 }
-
-
-//line break
-    }
-}
-
-// onclick="change_text" button id is #randotext paragraph id is "text" no hastag needed to mention ids
-/* Text options:
-
-
-            "I know right?"
-            "Confusing, huh?"
-            "I don't know what you want."
-            "I'm not sure why you're asking me."
-            "I don't think you should ask me."
-            "I..."
-            "I...am not exactly unsure."
-            "I don't get it..."
-            "Sorry. I don't understand."
-            "I don't know. Do I look like I even care? ...Sorry."
-            "Please stop.";
-            */
