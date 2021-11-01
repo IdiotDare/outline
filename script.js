@@ -23,11 +23,15 @@ var wLines = [
     "I don't get it...",
     "Sorry. I don't understand.",
     "I don't know. Do I look like I even care? ...Sorry.",
-    "Please stop."
+    "I don't know what you want.",
+    "I'm going to f*cking slap you.",
+    "...?",
+    "I am not...",
+    italics("Local ??? is confused!")
 ] //an array of possible options which can be picked out later with smth ike wLines[num] 
 
 function change_text(){
-    var num = Math.floor(Math.random() * (10-1)) //chooses a random number between 0 and 9, which will then be used to index blah blah the array.
+    var num = Math.floor(Math.random() * (15-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
     if(wLines[num] != document.getElementById("text").textContent) {
         document.getElementById("text").innerHTML = wLines[num];
     } else if(wLines[num] == document.getElementById("text").textContent) {
@@ -39,20 +43,6 @@ function change_text(){
 // onclick="change_text" button id is #randotext paragraph id is "text" no hastag needed to mention ids
 //document.getElementById("text").innerHTML = "text";
 //document.getElementById("myBtn").textContent refers to text content
-/* Text options:
-
-"I know right?"
-"Confusing, huh?"
-"I don't know what you want."
-"I'm not sure why you're asking me."
-"I don't think you should ask me."
-"I..."
-"I...am not exactly unsure."
-"I don't get it..."
-"Sorry. I don't understand."
-"I don't know. Do I look like I even care? ...Sorry."
-"Please stop.";
-            */
 
 
 function testButton() {//popup random text testing
