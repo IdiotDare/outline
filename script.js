@@ -12,7 +12,7 @@ document.querySelector('#update').onclick = function() {
 
 document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
-    Switch(num){
+    switch(num){
     case num == 1:
         alert('I know right?);
         break;
