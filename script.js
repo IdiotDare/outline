@@ -10,6 +10,49 @@ document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
 
+
+function testButton() {//should generator a random string into a var, which is then presented by change_text
+    var num = Math.floor(Math.random()*(10-1)+1);
+    switch(num+0){
+        case 1:
+            alert("I know right?");
+            break;
+        case 2:
+            alert("Confusing, huh?");
+            break;
+        case 3:
+            alert("I don't know what you want.");
+            break;
+        case 4:
+            alert("I'm not sure why you're asking me.");
+            break;
+        case 5:
+            alert("I don't think you should ask me.");
+            break;
+        case 6:
+            alert("I...");
+            break;
+        case 7:
+            alert("I...am not exactly unsure.");
+            break;
+        case 8:
+            alert("I don't get it...")
+            break;
+        case 9:
+            alert("Sorry. I don't understand.")
+            break;
+        case 10:
+            alert("I don't know. Do I look like I even care? ...Sorry.");
+            break;
+        default:
+            saysText.push("Please stop.");
+            break;
+    }
+}
+
+
+//line break
+
 var saysText = [];
 
 function textGenerato() {//should generator a random string into a var, which is then presented by change_text
