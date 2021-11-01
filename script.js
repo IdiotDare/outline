@@ -10,7 +10,7 @@ document.querySelector('#update').onclick = function() {
     alert('Before you ask, yes, I have absolutely no idea what I\'m doing. Seriously. :P I\m still learning basic JS.');
 }
 
-/* document.querySelector('#randotext').onclick = function() {
+document.querySelector('#randotext').onclick = function() {
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num){
     case num == 1:
@@ -36,7 +36,7 @@ document.querySelector('#update').onclick = function() {
         alert("Please stop.")      
  }    
 }
-*/
+/*
 function randotext() {
     var num = Math.floor(Math.random()*(10-1)+1);
     switch(num){
@@ -65,3 +65,4 @@ function randotext() {
 }
 
 document.querySelector('#randotext').onclick = randotext()
+*/
