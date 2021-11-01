@@ -36,7 +36,7 @@ function change_text(){
     var num = Math.floor(Math.random() * (17-1)) //chooses a random number between 0 and the number of text options, which will then be used to index blah blah the array.
     if(wLines[num] != document.getElementById("text").textContent && num != 14) {
         document.getElementById("text").innerHTML = wLines[num];
-    } else if(num=14 && wLines[14] != document.getElementById("text").textContent){
+    } else if(num == 14 && wLines[14] != document.getElementById("text").textContent){
         document.getElementById("text").innerHTML = italics(wLines[num]);
     } else if(wLines[num] == document.getElementById("text").textContent) {
         rantext()
